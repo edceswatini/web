@@ -1,0 +1,89 @@
+<!-- ================== gallery.html ================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+<link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+<header class="header">
+  <div class="logo" onclick="window.location='index.html'">
+  <img src="images/logo.png" alt="Logo">
+  <span>Emlalatini Development Centre</span>
+</div>
+  
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="academics.html">Academics</a>
+    <a class="active" href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Portal</a>
+  </nav>
+  <div class="actions">
+    <button onclick="toggleDarkMode()" class="dark-btn">🌓</button>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<section class="page-hero"><h1>Our Gallery</h1></section>
+
+<section class="section">
+  <h2>Campus Life</h2>
+
+  <div class="carousel">
+
+    <div class="slide active">
+      <img src="images/g1.jpeg">
+      <p>Students during a learning session</p>
+    </div>
+
+    <div class="slide">
+      <img src="images/g2.jpeg">
+      <p>Group discussion and collaboration</p>
+    </div>
+
+    <div class="slide">
+      <img src="images/g3.jpeg">
+      <p>Classroom environment</p>
+    </div>
+
+    <div class="slide">
+      <img src="images/g4.jpeg">
+      <p>Examination preparation session</p>
+    </div>
+
+    <!-- Controls -->
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+
+    <!-- Indicators -->
+    <div class="dots">
+      <span class="dot active" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+      <span class="dot" onclick="setSlide(3)"></span>
+    </div>
+
+  </div>
+</section>
+
+
+<div id="lightbox" onclick="closeImage()">
+  <img id="lightbox-img">
+</div>
+
+<a href="https://wa.me/26876631842?text=Hello%20I%20want%20to%20enquire%20about%20admissions" 
+   class="whatsapp-float" target="_blank">
+  💬
+</a>
+
+<footer><p>&copy; 2026 Emlalatini Development Centre | IT Department</p></footer>
+</body>
+</html>

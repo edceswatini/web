@@ -1,0 +1,44 @@
+<!-- ================== login.html ================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Login</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+<link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/logo.png" alt="Logo">
+    <span>Emlalatini Development Centre</span>
+  </div>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="academics.html">Academics</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a class="active" href="login.html">Portal</a>
+  </nav>
+  <div class="actions">
+    <button onclick="toggleDarkMode()" class="dark-btn">🌓</button>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h2>Student Portal Login</h2>
+  <input id="user" placeholder="Student ID">
+  <input id="pass" type="password" placeholder="Password">
+  <button class="btn" onclick="loginUser()">Login</button>
+</section>
+
+<footer><p>&copy; 2026 Emlalatini Development Centre | IT Department</p></footer>
+</body>
+</html>
