@@ -47,7 +47,7 @@ nav a.active,nav a:hover{opacity:1;color:var(--accent);}
 /* PAGE HERO */
 .page-hero {
   background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-              url('images/banner.jpg') center/cover;
+              url('images/banner.png') center/cover;
   color: #fff;
   text-align: center;
   padding: 80px 20px;
@@ -460,4 +460,21 @@ body.dark nav {
   background: var(--primary);
   color: white;
   transform: translateY(-3px);
+}
+/* TOP ALERT */
+.top-alert {
+  background: #ffcc00;
+  color: #000;
+  text-align: center;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.top-alert a {
+  color: #0a3d62;
+  text-decoration: underline;
 }
