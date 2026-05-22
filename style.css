@@ -588,3 +588,40 @@ body.dark nav {
   line-height: 1.7;
   margin-bottom: 25px;
 }
+/* CONTACT CARD */
+.contact-card {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  padding: 50px 30px;
+  background: var(--card-bg);
+  border-radius: 24px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.contact-icon {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  background: rgba(10,61,98,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon i {
+  font-size: 36px;
+  color: var(--primary);
+}
+
+/* TEXT */
+.contact-card p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.8;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
