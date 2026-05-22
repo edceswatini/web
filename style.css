@@ -478,3 +478,68 @@ body.dark nav {
   color: #0a3d62;
   text-decoration: underline;
 }
+/* APPLICATION BOX */
+.application-box {
+  margin-top: 50px;
+  padding: 35px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    #0a3d62,
+    #145c94
+  );
+  color: white;
+  text-align: center;
+}
+
+.application-box h2 {
+  margin-bottom: 15px;
+}
+
+.application-box p {
+  max-width: 650px;
+  margin: auto;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+/* APPLY BUTTON */
+.apply-btn {
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+}
+
+.apply-btn:hover {
+  background: white;
+}
+
+/* LMS GRID */
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* CARD */
+.platform-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-8px);
+}
+
+/* LOGO */
+.platform-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
