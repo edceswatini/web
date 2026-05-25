@@ -555,49 +555,94 @@ body.dark .team-card span {
   opacity: 1;
   transform: scale(1);
 }
+/* ======================================
+   EXPANDING TEAM CARD
+====================================== */
 
-/* ZOOM IMAGE */
-.team-card:hover .team-image img {
-  transform: scale(1.1);
+.expand-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.45s ease;
+  min-height: 420px;
 }
 
-/* OVERLAY TITLE */
-.team-overlay h4 {
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: white;
+/* IMAGE */
+.expand-card .team-image {
+  width: 190px;
+  height: 190px;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
-/* ROLE */
-.team-overlay p {
-  font-size: 14px;
-  color: #f1c40f;
-  margin-bottom: 8px;
-  font-weight: 600;
+.expand-card .team-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #0a3d62;
+  transition: 0.4s ease;
+}
+
+/* HOVER IMAGE */
+.expand-card:hover .team-image img {
+  transform: scale(1.08);
+}
+
+/* INFO */
+.expand-card .team-info {
+  transition: 0.4s ease;
+}
+
+/* EXPAND SECTION */
+.team-expand {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.4s ease,
+    margin-top 0.4s ease;
+
+  margin-top: 0;
+}
+
+/* SHOW ON HOVER */
+.expand-card:hover .team-expand {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 25px;
 }
 
 /* SUBJECTS */
-.team-overlay span {
-  font-size: 13px;
-  opacity: 0.9;
-  line-height: 1.5;
+.subjects {
+  color: #f1c40f;
+  font-weight: 600;
   margin-bottom: 15px;
-  color: white;
+  line-height: 1.6;
 }
 
-/* CONTACT ICONS */
+/* BIO */
+.bio {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* CONTACTS */
 .team-contact {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
 }
 
 /* ICONS */
 .team-contact a {
-  width: 34px;
-  height: 34px;
-  background: white;
-  color: #0a3d62;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  background: #0a3d62;
+  color: white;
 
   display: flex;
   align-items: center;
@@ -607,23 +652,23 @@ body.dark .team-card span {
   transition: 0.3s ease;
 }
 
-/* ICON HOVER */
+/* HOVER */
 .team-contact a:hover {
   background: #f1c40f;
-  transform: translateY(-3px);
+  color: #0a3d62;
+  transform: translateY(-4px);
 }
 
 /* MOBILE */
 @media(max-width:768px){
 
-  .team-overlay {
+  .team-expand {
+    max-height: 300px;
     opacity: 1;
-    transform: scale(1);
-    background: rgba(10,61,98,0.75);
+    margin-top: 20px;
   }
 
 }
-
 }/* TOP ALERT */
 .top-alert {
   background: #ffcc00;
